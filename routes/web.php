@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,17 +13,16 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::middleware('guest')->get('/', function () {
+    return view('auth.login');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::post('/login', function () {
+    return view('auth.login');
 });
 
-Route::get('/HelloWorld', function () {
-    return view('index');
+Route::get('/layout.app',function () {
+    return view('layout.app');
 });
 
 
@@ -30,4 +30,4 @@ Route::get('/HelloWorld', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
