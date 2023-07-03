@@ -65,10 +65,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
-    <script src="js/scripts.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
+
     <script src="assets/demo/chart-pie-demo.js"></script>
 
 
@@ -85,6 +84,15 @@
         var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
         var dropdownList = dropdownElementList.map(function(dropdownToggleEl) {
             return new bootstrap.Dropdown(dropdownToggleEl)
+        });
+    </script>
+
+    <script>
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar'); // Assuming you have a sidebar with the id "sidebar"
+
+        sidebarToggle.addEventListener('click', function() {
+            sidebar.classList.toggle('show'); // Add a CSS class to show/hide the sidebar
         });
     </script>
 

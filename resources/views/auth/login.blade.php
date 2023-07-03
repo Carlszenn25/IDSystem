@@ -13,11 +13,11 @@
 </head>
 <style>
     body {
-        background: linear-gradient(to bottom left, black 50%, #F6B923 50%);
+        background: linear-gradient(to bottom left, maroon 50%, brown 50%);
     }
 
     .custom-bg-color {
-        background-color: #1E34AB;
+        background-color: white;
     }
 </style>
 

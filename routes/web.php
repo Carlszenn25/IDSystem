@@ -26,8 +26,22 @@ Route::get('/layout.app',function () {
 });
 
 
+Route::get('/dashboard', function() {
+    return view('index');
+});
+
+Route::get('/card_template', function() {
+    return view('IDtemplate');
+});
+
+Route::get('/card_printing', function() {
+    return view('IDprinting');
+});
+
+
 
 
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+

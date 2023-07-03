@@ -4,7 +4,7 @@
     </div>
     <div class="sb-sidenav-menu">
         <div class="nav">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="/dashboard">
                 Dashboard
             </a>
 
@@ -45,10 +45,10 @@
                     </div>
                 </nav>
             </div>
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="/card_template">
                 ID Card Template
             </a>
-            <a class="nav-link" href="tables.html">
+            <a class="nav-link" href="/card_printing">
                 ID Card Printing
             </a>
         </div>
