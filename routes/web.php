@@ -31,11 +31,11 @@ Route::get('/dashboard', function() {
 });
 
 Route::get('/card_template', function() {
-    return view('IDtemplate');
+    return view('admin.IDtemplate');
 });
 
 Route::get('/card_printing', function() {
-    return view('IDprinting');
+    return view('admin.IDprinting');
 });
 
 
